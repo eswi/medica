@@ -14,10 +14,12 @@
 		1A3FD97023E44050008227F4 /* medica.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A3FD96E23E44050008227F4 /* medica.xcdatamodeld */; };
 		1A3FD97223E44051008227F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3FD97123E44051008227F4 /* Assets.xcassets */; };
 		1A3FD97523E44051008227F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3FD97323E44051008227F4 /* LaunchScreen.storyboard */; };
+		1A8AEA3723E849A900AFF962 /* Kenny.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1A8AEA3623E849A900AFF962 /* Kenny.JPG */; };
+		1ADFE87423E83DB500962064 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADFE87323E83DB500962064 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A3FD96223E44050008227F4 /* medica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A3FD96223E44050008227F4 /* 약드세요.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "약드세요.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3FD96523E44050008227F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A3FD96723E44050008227F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1A3FD96923E44050008227F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		1A3FD97123E44051008227F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A3FD97423E44051008227F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A3FD97623E44051008227F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A8AEA3623E849A900AFF962 /* Kenny.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kenny.JPG; sourceTree = "<group>"; };
+		1ADFE87323E83DB500962064 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +54,7 @@
 		1A3FD96323E44050008227F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A3FD96223E44050008227F4 /* medica.app */,
+				1A3FD96223E44050008227F4 /* 약드세요.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,10 +66,12 @@
 				1A3FD96723E44050008227F4 /* SceneDelegate.swift */,
 				1A3FD96923E44050008227F4 /* ViewController.swift */,
 				1A3FD96B23E44050008227F4 /* Main.storyboard */,
+				1ADFE87323E83DB500962064 /* AddViewController.swift */,
 				1A3FD97123E44051008227F4 /* Assets.xcassets */,
 				1A3FD97323E44051008227F4 /* LaunchScreen.storyboard */,
 				1A3FD97623E44051008227F4 /* Info.plist */,
 				1A3FD96E23E44050008227F4 /* medica.xcdatamodeld */,
+				1A8AEA3623E849A900AFF962 /* Kenny.JPG */,
 			);
 			path = medica;
 			sourceTree = "<group>";
@@ -87,7 +93,7 @@
 			);
 			name = medica;
 			productName = medica;
-			productReference = 1A3FD96223E44050008227F4 /* medica.app */;
+			productReference = 1A3FD96223E44050008227F4 /* 약드세요.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -129,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A3FD97523E44051008227F4 /* LaunchScreen.storyboard in Resources */,
+				1A8AEA3723E849A900AFF962 /* Kenny.JPG in Resources */,
 				1A3FD97223E44051008227F4 /* Assets.xcassets in Resources */,
 				1A3FD96D23E44050008227F4 /* Main.storyboard in Resources */,
 			);
@@ -141,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ADFE87423E83DB500962064 /* AddViewController.swift in Sources */,
 				1A3FD96A23E44050008227F4 /* ViewController.swift in Sources */,
 				1A3FD96623E44050008227F4 /* AppDelegate.swift in Sources */,
 				1A3FD97023E44050008227F4 /* medica.xcdatamodeld in Sources */,
@@ -296,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Wi.medica;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "약드세요";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,7 +322,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Wi.medica;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "약드세요";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

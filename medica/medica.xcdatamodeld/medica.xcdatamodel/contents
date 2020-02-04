@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Drugs" representedClassName="Drugs" syncable="YES" codeGenerationType="class">
+        <attribute name="caution" optional="YES" attributeType="String"/>
+        <attribute name="dateRegistered" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="image01" optional="YES" attributeType="Binary"/>
+        <attribute name="image02" optional="YES" attributeType="Binary"/>
+        <attribute name="noteDetail" optional="YES" attributeType="String"/>
+        <attribute name="titleOfficial" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Prescriptions" representedClassName="Prescriptions" syncable="YES" codeGenerationType="class">
+        <attribute name="dateCreatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateNext" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="datePrev" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="doseLength" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="durationOfEffect" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="noPerDay" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="noteDetail" optional="YES" attributeType="String"/>
+        <attribute name="onAlarm" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <elements>
+        <element name="Prescriptions" positionX="-54" positionY="-9" width="128" height="193"/>
+        <element name="Drugs" positionX="-54" positionY="63" width="128" height="148"/>
+    </elements>
 </model>

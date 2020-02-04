@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
+    var context: NSManagedObjectContext!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
+        let app = UIApplication.shared
+        let appDelegate = app.delegate as! AppDelegate
+        context = appDelegate.persistentContainer.viewContext
     }
 
 
