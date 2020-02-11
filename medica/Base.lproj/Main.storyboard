@@ -37,22 +37,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kenny.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="TPZ-ow-fTo">
-                                <rect key="frame" x="16" y="88" width="382" height="808"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CHI-Bb-xg8">
+                                <rect key="frame" x="0.0" y="88" width="414" height="134"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZAI-b5-7CF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kenny.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="ecZ-RU-4ah">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="134"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kenny02.png" translatesAutoresizingMaskIntoConstraints="NO" id="L64-GN-pJO">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="134"/>
+                                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZAI-b5-7CF" firstAttribute="leading" secondItem="CHI-Bb-xg8" secondAttribute="leadingMargin" id="Yyq-H7-uVt"/>
+                                    <constraint firstItem="ZAI-b5-7CF" firstAttribute="trailing" secondItem="CHI-Bb-xg8" secondAttribute="trailingMargin" id="faJ-Il-AEA"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TPZ-ow-fTo" firstAttribute="trailing" secondItem="uBE-Oi-EXa" secondAttribute="trailing" constant="-16" id="Chi-8S-Tp2"/>
-                            <constraint firstItem="TPZ-ow-fTo" firstAttribute="leading" secondItem="mNV-ea-B2W" secondAttribute="leading" constant="16" id="RHc-zN-0Rp"/>
-                            <constraint firstItem="TPZ-ow-fTo" firstAttribute="top" secondItem="uBE-Oi-EXa" secondAttribute="top" id="a8B-R2-9uX"/>
-                            <constraint firstAttribute="bottom" secondItem="TPZ-ow-fTo" secondAttribute="bottom" id="hAz-wf-xIU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CHI-Bb-xg8" secondAttribute="trailing" id="3zg-1u-7gB"/>
+                            <constraint firstItem="CHI-Bb-xg8" firstAttribute="leading" secondItem="uBE-Oi-EXa" secondAttribute="leading" id="Iq0-N3-qyz"/>
+                            <constraint firstItem="uBE-Oi-EXa" firstAttribute="trailing" secondItem="CHI-Bb-xg8" secondAttribute="trailing" id="MV6-Ic-yej"/>
+                            <constraint firstItem="CHI-Bb-xg8" firstAttribute="leading" secondItem="uBE-Oi-EXa" secondAttribute="leading" id="O9l-sB-fec"/>
+                            <constraint firstItem="CHI-Bb-xg8" firstAttribute="trailing" secondItem="uBE-Oi-EXa" secondAttribute="trailing" id="hfc-TK-it9"/>
+                            <constraint firstItem="uBE-Oi-EXa" firstAttribute="bottom" secondItem="CHI-Bb-xg8" secondAttribute="bottom" constant="640" id="jZe-LM-gCI"/>
+                            <constraint firstItem="CHI-Bb-xg8" firstAttribute="top" secondItem="uBE-Oi-EXa" secondAttribute="top" id="n5H-hz-lqC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uBE-Oi-EXa"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3zg-1u-7gB"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="처방 추가" id="kKp-MK-MGK">
                         <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="save" id="3jx-hT-mwd"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageView01" destination="ecZ-RU-4ah" id="ASd-4V-xFL"/>
+                        <outlet property="imageView02" destination="L64-GN-pJO" id="ShH-WS-0WR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lqu-Qm-HD5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,5 +110,6 @@
     </scenes>
     <resources>
         <image name="Kenny.JPG" width="1126.4000244140625" height="844.79998779296875"/>
+        <image name="Kenny02.png" width="768" height="1330"/>
     </resources>
 </document>

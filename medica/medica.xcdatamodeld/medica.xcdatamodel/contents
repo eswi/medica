@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Drugs" representedClassName="Drugs" syncable="YES" codeGenerationType="class">
         <attribute name="caution" optional="YES" attributeType="String"/>
         <attribute name="dateRegistered" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -22,7 +22,7 @@
         <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
     </entity>
     <elements>
-        <element name="Prescriptions" positionX="-54" positionY="-9" width="128" height="193"/>
         <element name="Drugs" positionX="-54" positionY="63" width="128" height="148"/>
+        <element name="Prescriptions" positionX="-54" positionY="-9" width="128" height="193"/>
     </elements>
 </model>

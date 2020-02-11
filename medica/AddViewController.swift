@@ -10,9 +10,13 @@ import UIKit
 
 class AddViewController: UIViewController {
 
+    @IBOutlet var imageView01: UIImageView!
+    @IBOutlet var imageView02: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(">>> 일단 여기는 왔음!")
         // Do any additional setup after loading the view.
     }
     

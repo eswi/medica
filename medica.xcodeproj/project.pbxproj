@@ -15,6 +15,7 @@
 		1A3FD97223E44051008227F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3FD97123E44051008227F4 /* Assets.xcassets */; };
 		1A3FD97523E44051008227F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3FD97323E44051008227F4 /* LaunchScreen.storyboard */; };
 		1A8AEA3723E849A900AFF962 /* Kenny.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1A8AEA3623E849A900AFF962 /* Kenny.JPG */; };
+		1A8AEA3923EA3CA800AFF962 /* Kenny02.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8AEA3823EA3CA800AFF962 /* Kenny02.png */; };
 		1ADFE87423E83DB500962064 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADFE87323E83DB500962064 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		1A3FD97423E44051008227F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A3FD97623E44051008227F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A8AEA3623E849A900AFF962 /* Kenny.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kenny.JPG; sourceTree = "<group>"; };
+		1A8AEA3823EA3CA800AFF962 /* Kenny02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kenny02.png; sourceTree = "<group>"; };
 		1ADFE87323E83DB500962064 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 				1A3FD97623E44051008227F4 /* Info.plist */,
 				1A3FD96E23E44050008227F4 /* medica.xcdatamodeld */,
 				1A8AEA3623E849A900AFF962 /* Kenny.JPG */,
+				1A8AEA3823EA3CA800AFF962 /* Kenny02.png */,
 			);
 			path = medica;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				1A3FD97523E44051008227F4 /* LaunchScreen.storyboard in Resources */,
 				1A8AEA3723E849A900AFF962 /* Kenny.JPG in Resources */,
 				1A3FD97223E44051008227F4 /* Assets.xcassets in Resources */,
+				1A8AEA3923EA3CA800AFF962 /* Kenny02.png in Resources */,
 				1A3FD96D23E44050008227F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
