@@ -7,19 +7,69 @@
 //
 
 import UIKit
+import AVFoundation
 
 class AddViewController: UIViewController {
+    
+    let captureSession = AVCaptureSession()
+    var previewLayer : CALayer!
+    
+    var captureDevice : AVCaptureDevice!
 
+    @IBOutlet var hStack: UIStackView!
     @IBOutlet var imageView01: UIImageView!
     @IBOutlet var imageView02: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(">>> 일단 여기는 왔음!")
         // Do any additional setup after loading the view.
+        prepareCamera()
     }
     
+    func prepareCamera() {
+        captureSession.sessionPreset = AVCaptureSession.Preset.photo
+        
+        let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back)
+        captureDevice = discoverySession.devices.first
+        
+        print(discoverySession.devices.count)
+        
+        beginSession()
+    }
+    
+    func beginSession() {
+        do {
+            let captureDeviceInput = try AVCaptureDeviceInput(device: captureDevice)
+            
+            captureSession.addInput(captureDeviceInput)
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+        
+        self.previewLayer = previewLayer
+        
+        // self.view.layer.addSublayer(self.previewLayer)
+        // self.previewLayer.frame = self.view.layer.frame
+        
+        imageView01.layer.addSublayer(self.previewLayer)
+        self.previewLayer.frame = imageView01.layer.frame
+        
+        captureSession.startRunning()
+
+        let dataOutput = AVCaptureVideoDataOutput()
+        dataOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String : NSNumber(value: kCVPixelFormatType_32BGRA)]
+        
+        dataOutput.alwaysDiscardsLateVideoFrames = true
+        
+        if captureSession.canAddOutput(dataOutput) {
+            captureSession.addOutput(dataOutput)
+        }
+        
+        captureSession.commitConfiguration()
+    }
 
     /*
     // MARK: - Navigation
