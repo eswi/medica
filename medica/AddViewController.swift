@@ -23,7 +23,7 @@ class AddViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // eswi:: AddViewㄱ가 올라오면 바로 카메라가 동작하는 것으로 일단~
         prepareCamera()
     }
     
@@ -33,7 +33,7 @@ class AddViewController: UIViewController {
         let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back)
         captureDevice = discoverySession.devices.first
         
-        print(discoverySession.devices.count)
+        print("발견한 카메라의 수 : ", discoverySession.devices.count)
         
         beginSession()
     }
@@ -55,7 +55,8 @@ class AddViewController: UIViewController {
         // self.previewLayer.frame = self.view.layer.frame
         
         imageView01.layer.addSublayer(self.previewLayer)
-        self.previewLayer.frame = imageView01.layer.frame
+        let rect = CGRect(x: 0, y: -30, width: imageView01.frame.width, height: imageView01.frame.height + 60)
+        self.previewLayer.frame = rect
         
         captureSession.startRunning()
 
