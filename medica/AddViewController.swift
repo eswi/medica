@@ -23,7 +23,7 @@ class AddViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // eswi:: AddViewㄱ가 올라오면 바로 카메라가 동작하는 것으로 일단~
+        // eswi:: AddView가 올라오면 바로 카메라가 동작하는 것으로 일단~
         prepareCamera()
     }
     
